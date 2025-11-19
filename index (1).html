@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yanga</title>
+  <meta name="description" content="Ukiwa Kwenye Mgodi wa YANGA Unasaidia Timu yetu Kuongeza Mapato" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-black text-white py-6 shadow-lg text-center">
+    <h1 class="text-3xl md:text-4xl font-bold">🎬 MGODI WA YANGA </h1>
+    <p class="text-sm mt-2">Kwa Pamoja tuna unga Mkono timu yetu </p>
+  </header>
+
+  <!-- IMAGE SLIDER -->
+  <section class="my-6">
+    <div class="swiper w-full h-[200px] md:h-[400px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://i.ibb.co/Pz5hgSCW/1754632842987.jpg" class="w-full h-full object-cover" alt="Slide 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.ibb.co/0pwHthMr/1754633038619.jpg" class="w-full h-full object-cover" alt="Slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.ibb.co/bjS6ct5j/1754633065770.jpg" class="w-full h-full object-cover" alt="Slide 3" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- UJUMBE MFUPI -->
+  <section class="px-4 py-6 text-center">
+    <p class="text-lg font-semibold text-gray-700 mb-4">
+      Ukiwa Kwenye Mgodi wa YANGA Unasaidia Timu yetu Kuongeza Mapato  
+    </p>
+  </section>
+
+  <!-- VIDEO MODAL -->
+  <div id="videoModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg overflow-hidden shadow-lg w-full max-w-xl relative p-6 text-center">
+      <button onclick="closeModal()" class="absolute top-2 right-2 text-black text-xl font-bold z-10">&times;</button>
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">🎬 Burudani Inaendelea...</h2>
+      <p class="text-gray-600 mb-4">Tafadhali Subiri Video inafunguka hivi punde...</p>
+      <div class="flex justify-center">
+        <svg class="animate-spin h-8 w-8 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOVIE GALLERY -->
+  <section class="px-4 pb-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- MOVIES -->
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden border">
+        <img src="https://i.ibb.co/7tkJ24MW/1754632883809.jpg" alt="Movie 1" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold mb-2">Matukio ya Usajili</h2>
+          <a href="#" onclick="startAds()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm block text-center">Chukua Zawadi ✅</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden border">
+        <img src="https://i.ibb.co/cSLdtvHq/1754633427361.jpg" alt="Movie 2" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold mb-2">Shabiki Bingwa</h2>
+          <a href="#" onclick="startAds()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm block text-center">Chukua Zawadi ✅</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden border">
+        <img src="https://i.ibb.co/FLbmWcNr/1754633414724.jpg" alt="Movie 3" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold mb-2">Mke wa Mtu</h2>
+          <a href="#" onclick="startAds()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm block text-center">Chukua Zawadi ✅</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden border">
+        <img src="https://i.ibb.co/RGGQr0yK/1754633731688.jpg" alt="Movie 4" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <h2 class="text-lg font-semibold mb-2">Kifo cha Mahaba</h2>
+          <a href="#" onclick="startAds()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm block text-center">Chukua Zawadi ✅</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://www.profitableratecpm.com/nt8js44d?key=d8d8cfdb8e868e11568002a67fe5adf3" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.93 11.93 0 0012.07 0C5.46 0 .03 5.43 0 12a11.94 11.94 0 001.64 6L0 24l6.18-1.62A11.91 11.91 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.18-3.48-8.52zM12 22.08a9.91 9.91 0 01-5.05-1.38l-.36-.22-3.67.96.98-3.58-.23-.37A9.91 9.91 0 012.02 12c.02-5.49 4.48-9.94 9.97-9.94 2.66 0 5.16 1.04 7.05 2.93A9.91 9.91 0 0122 12c0 5.49-4.48 9.94-10 9.94z"></path>
+    </svg>
+  </a>
+  
+  
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white text-center py-6">
+    <p class="text-sm">&copy; 2025 Mgodi wa YANGA All rights reserved</p>
+  </footer>
+
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+  <!-- ADS SCRIPT -->
+  <script>
+    const adLinks = [
+      "https://www.profitableratecpm.com/nt8js44d?key=d8d8cfdb8e868e11568002a67fe5adf3",
+      "https://www.profitableratecpm.com/z5desywyy?key=9e50b729a6b2f6115c1d322315609ef4",
+      "https://www.profitableratecpm.com/hmebn3d5e6?key=12b320a684a8e0c09f040b22b55a0360"
+    ];
+    let adIndex = 0;
+
+    function startAds() {
+      document.getElementById("videoModal").classList.remove("hidden");
+      const win = window.open(adLinks[adIndex], "_blank", "noopener,noreferrer");
+      adIndex = (adIndex + 1) % adLinks.length;
+      setTimeout(() => {
+        closeModal();
+      }, 5000);
+    }
+
+    function closeModal() {
+      document.getElementById("videoModal").classList.add("hidden");
+    }
+  </script>
+  
+  
+<!-- AUTOMATIC AD POPUP EVERY 3 SECONDS -->
+<div id="autoAdPopup" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 hidden">
+  <div class="bg-white p-4 rounded-xl shadow-2xl w-[90%] max-w-md text-center relative">
+    <button onclick="closeAdPopup()" class="absolute top-2 right-2 text-gray-700 text-2xl font-bold">&times;</button>
+    <p class="mb-3 text-gray-800 font-bold text-lg">Wanaotupa Nguvu...</p>
+    <iframe id="adFrame" src="" class="w-full h-48 border rounded mb-4"></iframe>
+    <button onclick="closeAdPopup()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">⏩ Skip Ads</button>
+  </div>
+</div>
+
+<script>
+  const autoAdLinks = [
+    "https://www.profitableratecpm.com/nt8js44d?key=d8d8cfdb8e868e11568002a67fe5adf3"
+  ];
+  let autoAdIndex = 0;
+
+  function showAdPopup() {
+    const adPopup = document.getElementById("autoAdPopup");
+    const adFrame = document.getElementById("adFrame");
+    adFrame.src = autoAdLinks[autoAdIndex];
+    adPopup.classList.remove("hidden");
+    autoAdIndex = (autoAdIndex + 1) % autoAdLinks.length;
+  }
+
+  function closeAdPopup() {
+    document.getElementById("autoAdPopup").classList.add("hidden");
+  }
+
+  // Show ad popup every 3 seconds
+  setInterval(showAdPopup, 3000);
+</script>
+  
+
+</body>
+</html>
